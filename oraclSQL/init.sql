@@ -1,4 +1,4 @@
- --用户名：orcl　密码：orcl
+ 用户名：orcl　密码：orcl
 --删除表空间
 drop tablespace JAVADATA including contents and datafiles;
 --创建表空间
@@ -10,4 +10,3 @@ DROP USER test cascade;
 create user test IDENTIFIED BY test default tablespace JAVADATA;
 --授予权限
 GRANT  DBA,CONNECT,UNLIMITED TABLESPACE TO test;
-
