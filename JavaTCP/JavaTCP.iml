@@ -7,9 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="ojdbc6" level="application" />
-    <orderEntry type="library" name="commons-dbutils-1.7" level="application" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.49-bin" level="application" />
-    <orderEntry type="library" name="classes12" level="application" />
   </component>
 </module>
