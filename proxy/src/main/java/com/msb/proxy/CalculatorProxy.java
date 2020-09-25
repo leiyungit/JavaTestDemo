@@ -1,13 +1,11 @@
 package com.msb.proxy;
 
 import com.msb.service.ICalculator;
-import com.msb.service.impl.Calculator;
+import com.msb.util.LogUtil;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class CalculatorProxy {
 
@@ -16,9 +14,19 @@ public class CalculatorProxy {
         Class<?>[] interfaces = calculator.getClass().getInterfaces();
         InvocationHandler handler = new InvocationHandler() {
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                System.out.println(method.getName()+" 方法执行前....参数："+ Arrays.asList(args));
-                Object invoke = method.invoke(calculator, args);
-                System.out.println(method.getName()+" 方法执行后....结果：" + invoke);
+                Object invoke = null;
+                try{
+                    //System.out.println(method.getName()+" 方法执行前....参数："+ Arrays.asList(args));
+                    LogUtil.start(method,args);
+                    invoke = method.invoke(calculator, args);
+                    //System.out.println(method.getName()+" 方法执行后....结果：" + invoke);
+                    LogUtil.stop(method,invoke);
+                }catch (Exception e){
+                    //e.printStackTrace();
+                    LogUtil.Exception(method, e);
+                }finally {
+                    LogUtil.end(method);
+                }
                 return invoke;
             }
         };
