@@ -2,6 +2,7 @@ package com.itcast.test;
 
 import com.itcast.domain.Account;
 import com.itcast.dao.IAccountDao;
+import com.itcast.domain.AccountUser;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -50,6 +51,14 @@ public class AccountTest {
         List<Account> accounts = mapper.findAll();
         for (Account account : accounts) {
             System.out.println(account);
+        }
+    }
+
+    @Test
+    public void testFindAllAccount(){
+        List<AccountUser> aus = mapper.findAllAccount();
+        for (AccountUser au : aus) {
+            System.out.println(au);
         }
     }
 }

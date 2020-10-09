@@ -1,5 +1,5 @@
 /home/leiyun/IdeaProjects/gitdemo/JavaTestDemo/mybatie/mybatis_day03_02many/src/main/java/com/itcast/dao/IUserDao.java
+/home/leiyun/IdeaProjects/gitdemo/JavaTestDemo/mybatie/mybatis_day03_02many/src/main/java/com/itcast/domain/User.java
 /home/leiyun/IdeaProjects/gitdemo/JavaTestDemo/mybatie/mybatis_day03_02many/src/main/java/com/itcast/dao/IAccountDao.java
-/home/leiyun/IdeaProjects/gitdemo/JavaTestDemo/mybatie/mybatis_day03_02many/src/main/java/com/itcast/damain/Account.java
-/home/leiyun/IdeaProjects/gitdemo/JavaTestDemo/mybatie/mybatis_day03_02many/src/main/java/com/itcast/damain/User.java
-/home/leiyun/IdeaProjects/gitdemo/JavaTestDemo/mybatie/mybatis_day03_02many/src/main/java/com/itcast/dao/Impl/UserDaoImpl.java
+/home/leiyun/IdeaProjects/gitdemo/JavaTestDemo/mybatie/mybatis_day03_02many/src/main/java/com/itcast/domain/AccountUser.java
+/home/leiyun/IdeaProjects/gitdemo/JavaTestDemo/mybatie/mybatis_day03_02many/src/main/java/com/itcast/domain/Account.java

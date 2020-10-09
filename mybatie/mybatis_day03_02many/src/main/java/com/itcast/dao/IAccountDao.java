@@ -1,6 +1,7 @@
 package com.itcast.dao;
 
 import com.itcast.domain.Account;
+import com.itcast.domain.AccountUser;
 
 import java.util.List;
 
@@ -16,6 +17,6 @@ public interface IAccountDao {
      * 查询所有账户，并且带有用户名称和地址信息
      * @return
      */
-    List<> findAllAccount();
+    List<AccountUser> findAllAccount();
 
 }
