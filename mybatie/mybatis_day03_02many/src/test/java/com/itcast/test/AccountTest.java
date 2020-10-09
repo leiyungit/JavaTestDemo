@@ -50,7 +50,9 @@ public class AccountTest {
     public void testFindAll(){
         List<Account> accounts = mapper.findAll();
         for (Account account : accounts) {
+            System.out.println("----------每一个account账户------------");
             System.out.println(account);
+            System.out.println(account.getUser());
         }
     }
 
