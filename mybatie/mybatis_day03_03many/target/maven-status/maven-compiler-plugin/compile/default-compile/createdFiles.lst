@@ -1,0 +1,4 @@
+com/itcast/domain/Role.class
+com/itcast/domain/User.class
+com/itcast/dao/IUserDao.class
+com/itcast/dao/IRoleDao.class
