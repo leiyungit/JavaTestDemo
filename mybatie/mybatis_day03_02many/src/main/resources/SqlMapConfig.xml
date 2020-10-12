@@ -4,6 +4,8 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <!--mybatis主配置文件-->
 <configuration >
+    <!--配置properties-->
+    <properties resource="jdbcConfig.properties"/>
     <!--  [实体类] 使用typeAliases配置别名，它只能配置domain中类的别名-->
     <typeAliases>
         <!--typeAlias用于配置别名，type属性指定的实体类全限定类名。alias属性指定别名，当指定类别名就不再区分大小写-->
@@ -18,10 +20,10 @@
             <transactionManager type="JDBC"/>
             <!--配置数据源，连接池-->
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/testdb"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
             </dataSource>
         </environment>
     </environments>
