@@ -10,6 +10,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/mybatis_day04_01lazy/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_plus_generator/pom.xml" />
       </list>
     </option>
   </component>

@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis_day04_01lazy" />
+        <module name="mybatis_plus_generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="mybatis_day04_01lazy" target="1.8" />
+      <module name="mybatis_plus_generator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
